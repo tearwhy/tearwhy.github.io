@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="cn">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -80,11 +80,11 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="测试博客">
+<meta property="og:title" content="我的博客">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="测试博客">
+<meta property="og:site_name" content="我的博客">
 <meta property="og:locale">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="Hello world！">
 <meta name="twitter:card" content="summary">
 
 
@@ -101,7 +101,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -121,7 +121,7 @@
 
 
 
-  <title>测试博客</title>
+  <title>我的博客</title>
   
 
 
@@ -133,7 +133,7 @@
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="cn">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -152,7 +152,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">测试博客</span>
+        <span class="site-title">我的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -182,7 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -192,7 +192,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -248,7 +248,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="测试博客">
+      <meta itemprop="name" content="我的博客">
     </span>
 
     
@@ -268,9 +268,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-03T23:54:38+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-03T23:54:38+08:00">
                 2021-03-03
               </time>
             
@@ -317,7 +317,7 @@
 <h3 id="4-注册github"><a href="#4-注册github" class="headerlink" title="4. 注册github"></a>4. 注册github</h3><p>然后点+号–&gt;new repository,然后在Repository name的时候，填写username.github.io，<br>比如你的github名字是ceshi，那么就填写ceshi.github.io,然后点create repository。</p>
 <h3 id="5-设置全局配置"><a href="#5-设置全局配置" class="headerlink" title="5. 设置全局配置"></a>5. 设置全局配置</h3><p>在blog文件夹右键，git bash here，输入命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;user.name&quot;</span><br><span class="line">git config --global user.email &quot;user.email&quot;</span><br></pre></td></tr></table></figure>
-<p>比如我的github名字是ceshi，邮箱是<a href="mailto:&#99;&#101;&#115;&#x68;&#x69;&#64;&#x74;&#x65;&#x73;&#116;&#46;&#99;&#111;&#109;">&#99;&#101;&#115;&#x68;&#x69;&#64;&#x74;&#x65;&#x73;&#116;&#46;&#99;&#111;&#109;</a>，那么就设置成</p>
+<p>比如我的github名字是ceshi，邮箱是<a href="mailto:&#99;&#x65;&#x73;&#104;&#105;&#x40;&#116;&#101;&#x73;&#116;&#x2e;&#99;&#111;&#x6d;">&#99;&#x65;&#x73;&#104;&#105;&#x40;&#116;&#101;&#x73;&#116;&#x2e;&#99;&#111;&#x6d;</a>，那么就设置成</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;ceshi&quot;</span><br><span class="line">git config --global user.email &quot;ceshi@test.com&quot;</span><br></pre></td></tr></table></figure>
 <p>然后可以输入命令查看是否设置成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
@@ -325,7 +325,7 @@
 <p>例如</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;ceshi@test.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p>生成的文件在C:\Users\用户名\.ssh里面，然后用文本打开，复制，然后点击github账户<br><br>点击setting–&gt;SSH and GPG keys–&gt;New SSH key,把复制的字符串粘贴进去，保存。<br><br>然后在blog文件夹右键，git bash here，输入命令，ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#x6d;</a>看看是否链接成功</p>
+<p>生成的文件在C:\Users\用户名\.ssh里面，然后用文本打开，复制，然后点击github账户<br><br>点击setting–&gt;SSH and GPG keys–&gt;New SSH key,把复制的字符串粘贴进去，保存。<br><br>然后在blog文件夹右键，git bash here，输入命令，ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>看看是否链接成功</p>
 <h3 id="7-生成静态博客文件"><a href="#7-生成静态博客文件" class="headerlink" title="7. 生成静态博客文件"></a>7. 生成静态博客文件</h3><p>hexo clean清空生成的静态文件<br><br>hexo generate或者hexo g生成静态文件<br><br>hexo s本地启动hexo博客浏览<br><br>访问<a href="http://ip:4000,进行浏览博客">http://ip:4000,进行浏览博客</a><br><br>然后本地访问成功就同步到github<br>输入命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install –save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>安装成功后</p>
@@ -402,7 +402,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="测试博客">
+      <meta itemprop="name" content="我的博客">
     </span>
 
     
@@ -422,9 +422,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-02T22:59:51+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-02T22:59:51+08:00">
                 2021-03-02
               </time>
             
@@ -535,7 +535,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="测试博客">
+      <meta itemprop="name" content="我的博客">
     </span>
 
     
@@ -555,9 +555,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-01T22:32:28+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-01T22:32:28+08:00">
                 2021-03-01
               </time>
             
@@ -692,7 +692,7 @@
                 <a href="/archives/%7C%7C%20archive">
               
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -705,7 +705,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -745,13 +745,13 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Hello world！</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -759,7 +759,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 

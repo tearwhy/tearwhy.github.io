@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="cn">
+<html class="theme-next gemini use-motion" lang="cn">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -183,6 +183,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -307,7 +317,7 @@
 <h3 id="4-注册github"><a href="#4-注册github" class="headerlink" title="4. 注册github"></a>4. 注册github</h3><p>然后点+号–&gt;new repository,然后在Repository name的时候，填写username.github.io，<br>比如你的github名字是ceshi，那么就填写ceshi.github.io,然后点create repository。</p>
 <h3 id="5-设置全局配置"><a href="#5-设置全局配置" class="headerlink" title="5. 设置全局配置"></a>5. 设置全局配置</h3><p>在blog文件夹右键，git bash here，输入命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;user.name&quot;</span><br><span class="line">git config --global user.email &quot;user.email&quot;</span><br></pre></td></tr></table></figure>
-<p>比如我的github名字是ceshi，邮箱是<a href="mailto:&#x63;&#x65;&#x73;&#104;&#105;&#64;&#116;&#x65;&#115;&#116;&#46;&#99;&#x6f;&#x6d;">&#x63;&#x65;&#x73;&#104;&#105;&#64;&#116;&#x65;&#115;&#116;&#46;&#99;&#x6f;&#x6d;</a>，那么就设置成</p>
+<p>比如我的github名字是ceshi，邮箱是<a href="mailto:&#99;&#x65;&#115;&#x68;&#x69;&#64;&#x74;&#101;&#x73;&#116;&#x2e;&#x63;&#111;&#x6d;">&#99;&#x65;&#115;&#x68;&#x69;&#64;&#x74;&#101;&#x73;&#116;&#x2e;&#x63;&#111;&#x6d;</a>，那么就设置成</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;ceshi&quot;</span><br><span class="line">git config --global user.email &quot;ceshi@test.com&quot;</span><br></pre></td></tr></table></figure>
 <p>然后可以输入命令查看是否设置成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
@@ -315,7 +325,7 @@
 <p>例如</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;ceshi@test.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p>生成的文件在C:\Users\用户名\.ssh里面，然后用文本打开，复制，然后点击github账户<br><br>点击setting–&gt;SSH and GPG keys–&gt;New SSH key,把复制的字符串粘贴进去，保存。<br><br>然后在blog文件夹右键，git bash here，输入命令，ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>看看是否链接成功</p>
+<p>生成的文件在C:\Users\用户名\.ssh里面，然后用文本打开，复制，然后点击github账户<br><br>点击setting–&gt;SSH and GPG keys–&gt;New SSH key,把复制的字符串粘贴进去，保存。<br><br>然后在blog文件夹右键，git bash here，输入命令，ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>看看是否链接成功</p>
 <h3 id="7-生成静态博客文件"><a href="#7-生成静态博客文件" class="headerlink" title="7. 生成静态博客文件"></a>7. 生成静态博客文件</h3><p>hexo clean清空生成的静态文件<br><br>hexo generate或者hexo g生成静态文件<br><br>hexo s本地启动hexo博客浏览<br><br>访问<a href="http://ip:4000,进行浏览博客">http://ip:4000,进行浏览博客</a><br><br>然后本地访问成功就同步到github<br>输入命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install –save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>安装成功后</p>
@@ -690,6 +700,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
 
           </nav>
 
@@ -740,7 +759,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -839,6 +858,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
